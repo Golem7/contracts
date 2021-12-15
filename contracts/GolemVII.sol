@@ -47,12 +47,6 @@ contract GolemVII is ERC1155, Ownable, Pausable, VRFConsumerBase {
         return _tokenDetails[tokenId];
     }
 
-    // function mintShip(uint8 damage) public onlyOwner{
-    //     _tokenDetails[nextId] = Ship(damage);
-    //     _mint(msg.sender, nextId, 1, "");
-    //     nextId++;
-    // }
-
     function newMintShip(string memory tokenURI)
     public returns (bytes32)
     {
