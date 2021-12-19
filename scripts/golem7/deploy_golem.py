@@ -1,7 +1,8 @@
 from brownie import GolemVII, accounts, network, config
 from scripts.helpers import fund_golem
 
-def main():
+
+def deploy_golem():
     dev = accounts.load('test_moralis', password='123Test')
     print(network.show_active())
     publishSource=False
@@ -14,3 +15,6 @@ def main():
     )
     fund_golem(golem7)
     return golem7
+
+def main():
+    deploy_golem()

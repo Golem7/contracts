@@ -1,11 +1,13 @@
 dependencies:
   - OpenZeppelin/openzeppelin-contracts@4.4.1
   - smartcontractkit/chainlink-brownie-contracts@0.3.0
+  - Brechtpd/base64@1.1.0
 compiler:
   solc:
     remappings:
       - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.4.1'
       - '@chainlink=smartcontractkit/chainlink-brownie-contracts@0.3.0'
+      - 'base64-sol=Brechtpd/base64@1.1.0' 
 networks:
   mumbai_moralis:
     vrf_coordinator: '0x8C7382F9D8f56b33781fE506E897a4F1e2d17255'
